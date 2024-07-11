@@ -38,10 +38,17 @@ NB: Use the latest versions of the software.
 Use the link here to access the deployed app showing the data and the resultant figures {*To embed a hyperlink once we agree on deploying the app*}.
 
 #### Locally
-Git clones the repository.
-Install all the above-listed software in your environment and activate the environment.
-1. Launch the jupyter lab or notebook run the `.ipynb file` and run the cells
-2. Use the streamlit `streamlit run data_vis_app.py` to launch the web app
+
+1. Git clone the repository to the OS.
+
+2. Create conda environment as follows.
+   `conda env create -f data_vis.yml`
+   
+3. Activate the conda environment
+   `Conda activate env_name`
+   
+- Launch the jupyter lab or notebook run the `.ipynb file` and run the cells.
+- Use the streamlit `streamlit run data_vis_app.py` to launch the web app.
 
 
    
