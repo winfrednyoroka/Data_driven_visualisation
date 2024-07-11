@@ -1,4 +1,4 @@
-# Data-driven visualisation tool to guide sensitivity analysis for RCT evidence synthesis
+# Data-driven visualisation tool to guide sensitivity analysis for Randomised Controlled Trial evidence synthesis
 
 ## Motivation
 Increasingly, randomisation to a treatment or placebo is being used for instrumental variable (IV) analysis in Randomized Controlled Trials (RCTs) for evidence triangulation.
