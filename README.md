@@ -1,4 +1,17 @@
-# Data_Driven_visualisation tool
+# Data_Driven_visualisation tool for failed randomisation
 
-   The visualisation helps researchers explore sources of bias and make careful decisions on whether to proceed with metaanalysis or not.
-Also, useful in guiding senitivity analysis that has to be done.
+## Motivation
+   
+   
+The visualisation helps researchers explore sources of bias and make careful decisions on whether to proceed with metaanalysis or not.
+Also, helpful in guiding sensitivity analysis that has to be done.
+
+
+
+
+
+**Authors**
+- Winfred N Gatua
+- Yi Liu
+- Deborah Lawlor
+- Tom Gaunt
