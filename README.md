@@ -39,12 +39,14 @@ Use the link here to access the deployed app showing the data and the resultant 
 
 #### Locally
 
-1. Git clone the repository to the OS.
+1. Git clone the repository to target OS.
 
-2. Create conda environment as follows.
+2. Create a conda environment as follows.
+   
    `conda env create -f data_vis.yml`
    
-3. Activate the conda environment
+4. Activate the conda environment
+   
    `Conda activate env_name`
    
 - Launch the jupyter lab or notebook run the `.ipynb file` and run the cells.
