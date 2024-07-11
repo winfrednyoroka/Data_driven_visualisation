@@ -21,6 +21,7 @@ The figures we generated are also in the repo. However, they are available in th
 
 ## Software
 NB: Use the latest versions of the software.
+
 `Pandas`
 
 `Altair`
