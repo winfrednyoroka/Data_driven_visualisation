@@ -22,7 +22,7 @@ The figures we generated are also in the repo. However, they are available in th
 ## Software
 NB: Use the latest versions of the software.
 
-`Panda v2.2.2`
+`Pandas v2.2.2`
 
 `Altair v5.3.0`
 
