@@ -41,7 +41,7 @@ Use the link here to access the deployed app showing the data and the resultant 
 Git clones the repository.
 Install all the above-listed software in your environment and activate the environment.
 1. Launch the jupyter lab or notebook run the `.ipynb file` and run the cells
-2. Use the streamlit `streamlit run data_visualisation_app.py` to launch the web app
+2. Use the streamlit `streamlit run data_vis_app.py` to launch the web app
 
 
    
