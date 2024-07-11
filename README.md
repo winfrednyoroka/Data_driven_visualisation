@@ -22,9 +22,13 @@ The figures we generated are also in the repo. However, they are available in th
 ## Software
 NB: Use the latest versions of the software.
 `Pandas`
+
 `Altair`
+
 `Streamlit v1.36.0`
+
 `Python 3.12.0`
+
 `Jupyter Notebook or jupyter lab`
 
 ## Usage
@@ -34,7 +38,7 @@ Use the link here to access the deployed app showing the data and the resultant 
 
 #### Locally
 Git clones the repository.
-Ensure the environment has all the above-listed software installed.
+Install all the above-listed software in your environment and activate the environment.
 1. Launch the jupyter lab or notebook run the `.ipynb file` and run the cells
 2. Use the streamlit `streamlit run data_visualisation_app.py` to launch the web app
 
