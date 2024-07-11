@@ -35,7 +35,7 @@ NB: Use the latest versions of the software.
 ## Usage
 
 #### Web
-Use the link here to access the deployed app showing the data and the resultant figures.
+Use the link here to access the deployed app showing the data and the resultant figures {*To embed a hyperlink once we agree on deploying the app*}.
 
 #### Locally
 Git clones the repository.
