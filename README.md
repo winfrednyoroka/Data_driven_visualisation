@@ -9,11 +9,37 @@ We acknowledge that bias could arise from so many other areas, not just failed r
 
 ## Relevance
 However, we aim to provide a data-driven visualisation approach that will help other researchers make careful considerations about whether to progress with metaanalysis and will also be useful in guiding sensitivity analysis.
+
+
+##  Implementation
+We used Pandas for data wrangling and altair for visualisation.
+We have implemented the code and deployed it as a web app using streamlit v1.36.0, where the data is provided side by side with the visualisations showing the baseline measures for the treatment arms.
+We have provided the data from our work for reproducibility.
+We have deposited all scripts that we used in this repository including the Jupyter Notebook and streamlit web app. 
+The figures we generated are also in the repo. However, they are available in the app.
+
+
+## Software
+NB: Use the latest versions of the software.
+`Pandas`
+`Altair`
+`Streamlit v1.36.0`
+`Python 3.12.0`
+`Jupyter Notebook or jupyter lab`
+
+## Usage
+
+#### Web
+Use the link here to access the deployed app showing the data and the resultant figures.
+
+#### Locally
+Git clones the repository.
+Ensure the environment has all the above-listed software installed.
+1. Launch the jupyter lab or notebook run the `.ipynb file` and run the cells
+2. Use the streamlit `streamlit run data_visualisation_app.py` to launch the web app
+
+
    
-
-
-
-
 
 
 **Authors**
