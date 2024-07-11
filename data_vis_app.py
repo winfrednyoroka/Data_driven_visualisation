@@ -168,7 +168,7 @@ DBPrange_plot.configure_axis(
 ).configure_title(fontSize=22)
 	
 with tab5:
-	st.dataframe(range_df)
+	st.dataframe(range_df) # Display the range dataframe
 	
 with tab6:
 	st.altair_chart(DBPrange_plot.configure_axis(
