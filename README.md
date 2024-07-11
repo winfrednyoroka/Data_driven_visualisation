@@ -22,9 +22,9 @@ The figures we generated are also in the repo. However, they are available in th
 ## Software
 NB: Use the latest versions of the software.
 
-`Pandas`
+`Panda v2.2.2`
 
-`Altair`
+`Altair v5.3.0`
 
 `Streamlit v1.36.0`
 
