@@ -49,6 +49,7 @@ Install all the above-listed software in your environment and activate the envir
 
 **Authors**
 - Winfred N Gatua
+- Maria Sobcyzk
 - Yi Liu
 - Deborah Lawlor
 - Tom Gaunt
