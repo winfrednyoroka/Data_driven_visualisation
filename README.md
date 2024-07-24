@@ -15,7 +15,7 @@ However, we aim to provide a data-driven visualisation approach that will help o
 We used Pandas for data wrangling and altair for visualisation.
 We have implemented the code and deployed it as a web app using streamlit v1.36.0, where the data is provided side by side with the visualisations showing the baseline measures for the treatment arms.
 We have provided the data from our work for reproducibility.
-We have deposited all scripts that we used in this repository including the Jupyter Notebook and streamlit web app. 
+We have deposited all scripts that we used in this repository, including the Jupyter Notebook and streamlit web app. 
 The figures we generated are also in the repo. However, they are available in the app.
 
 
