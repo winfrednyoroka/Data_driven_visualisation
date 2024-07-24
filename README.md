@@ -4,7 +4,7 @@
 Increasingly, randomisation to a treatment or placebo is being used for instrumental variable (IV) analysis in Randomized Controlled Trials (RCTs) for evidence triangulation.
 In our applied example of triangulating Mendelian randomisation (Mr) and RCTs evidence, we noted a high level of heterogeneity among surgical trials in which we were synthesising evidence. Our main assumption is that randomisation ought to be done correctly so that we can use it as an IV instrument. Variables of interest that would be useful for metaregression analysis are poorly reported across the studies, a good example being antihypertensive drug use for participants with hypertension. As a result, we envisioned visualising the baseline characteristics. Specifically the exposure and the outcome, which is our key measure to compute the estimand of interest, would provide interesting findings to guide researchers with further work.
 
-Despite RCTs declaring in the publications that randomisation was done we have observed a lot of within and between study differences. 
+Despite RCTs reporting in the publications that randomisation was done, we have observed many differences within and between studies. 
 We acknowledge that bias could arise from so many other areas, not just failed randomisation. 
 
 ## Relevance
