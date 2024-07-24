@@ -10,7 +10,7 @@ st.write('''We calculated the Euclidean distance at baseline of body mass index 
 	at baseline between the treatment arms.
 	If both treatment arms started the same the Euclidean distance should be zero, otherwise they started
 	differently. Click the first tab to see the data and the second tab to see the visualisation.''')
-st.sidebar.markdown("Euclidean distance data and visualisation")
+st.sidebar.markdown("**Euclidean distance data and visualisation**")
 
 
 tab1,tab2=st.tabs(['Data','Euclidean distance visualisation @baseline'])
@@ -47,12 +47,12 @@ distances. It has the average BMI and DBP for both treatment arms.
 
 with tab2:
 	# Display the visualisation
-	st.altair_chart(T1C1_Eucdist_DBP_plot,use_container_width=True)
+	st.altair_chart(T1C1_Eucdist_DBP_plot,use_container_width=True,theme='streamlit')
 
 	st.text('''The figure above shows Euclidean distance between the treatment arms at baseline.
-Euclidean distance equal to zero shows BMI and DBP at baseline was the same in both treatment arms
-while more than zero shows that the two treatment arms started differently. All of the studies here
-started differently with Euclidean distance greater than zero (0).''')
+Euclidean distance equal to zero shows BMI and DBP at baseline was the same in both
+arms while more than zero shows the two treatment arms started differently.
+All studies started differently with Euclidean distance greater than zero (0).''')
 
 
 

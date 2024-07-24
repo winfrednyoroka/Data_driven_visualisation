@@ -11,7 +11,7 @@ st.write(''' We calculated Wald ratios for three scenarios in each study to esti
     A range of zero shows the treatment arms have similar slope and the difference at twelve months is a result of either of the treatment
     causing more weightloss and subsequently lower DBP.
     ''')
-st.sidebar.markdown("Scenario range  data and visualisation")
+st.sidebar.markdown("**Scenario range  data and visualisation**")
 
 tab1,tab2=st.tabs(['Data','Scenario range visualisation'])
 # Read in the data (Scenario range)
@@ -45,7 +45,7 @@ characteristics.
 It has the minimum and maximum Wald ratio.""")
 
 with tab2:
-    st.altair_chart(DBPrangeplot, use_container_width=True)
+    st.altair_chart(DBPrangeplot, use_container_width=True,theme='streamlit')
     st.text("""The plot above shows the range i.e. maximum Wald ratio less 
 minimum Wald ratio for each.
 A range of zero, shows that the baseline characteristics were the same 
