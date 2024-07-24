@@ -58,7 +58,7 @@ Use the link here to access the deployed app showing the data and the resultant 
 
 **Authors**
 - Winfred N Gatua
-- Maria Sobcyzk
+- Maria Sobczyk
 - Yi Liu
 - Deborah Lawlor
 - Tom Gaunt
