@@ -9,7 +9,7 @@ st.markdown(":blue[BMI vs DBP pre-post treatment]")
 st.write('''We visualise the body mass index (BMI) and 
          diastolic blood pressure (DBP) at baseline. If the treatment arms started the same, we expect the
 		 datapoints to overlap.''')
-st.sidebar.markdown(":blue[**Data visualisation of BMI vs DBP pre-post**]")
+st.sidebar.markdown("**Data visualisation of BMI vs DBP pre-post**")
 
 # Read in the data
 DBP = pd.read_csv('./Data/Study_Pop_BMI_DBP.csv')	
