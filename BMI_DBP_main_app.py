@@ -5,6 +5,8 @@ import pandas as pd
 import altair as alt
 import numpy as np
 
+st.set_page_config(layout='wide')
+st.title('Data-driven Visualisation')
 st.markdown(":blue[BMI vs DBP pre-post treatment]")
 st.write('''We visualise the body mass index (BMI) and 
          diastolic blood pressure (DBP) at baseline. If the treatment arms started the same, we expect the
