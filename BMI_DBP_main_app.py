@@ -14,7 +14,7 @@ st.write('''We visualise the body mass index (BMI) and
 st.sidebar.markdown("**Data visualisation of BMI vs DBP pre-post**")
 
 # Read in the data
-DBP = pd.read_csv('./Data/Study_Pop_BMI_DBP.csv')	
+DBP = pd.read_csv('./Data/Study_Pop_BMI_DBP.csv')
 tab1,tab2 = st.tabs(['Data', 'BMI_DBP visualisation pre-post treatment'])
 
 with tab1:
@@ -69,5 +69,5 @@ with tab2:
 symbolSize = 300).configure_headerFacet(labelFontSize=20,labelFontWeight='bold', title= None)
 ,use_container_width=True)
 	st.text('''The plot above shows BMI vs DBP for both treatment arms pre-post treatment.
-The circles represent baseline and diamonds show the twelve months measure.
+The circles represent the baseline, and the diamonds show the twelve months measure.
 The red and blue represent the intervention and control arm respectively.''')
