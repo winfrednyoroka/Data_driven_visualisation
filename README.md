@@ -49,7 +49,7 @@ Use the link here to access the deployed app showing the data and the resultant 
    
    `Conda activate env_name`
    
-- Launch the jupyter lab or notebook run the `.ipynb file` and run the cells.
+- Launch the jupyter lab or notebook, run the `.ipynb file` and run the cells.
 - Use the streamlit `streamlit run BMI_DBP_main_app.py` to launch the multipage web app.
 
 
