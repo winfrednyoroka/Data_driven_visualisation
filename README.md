@@ -52,7 +52,15 @@ Use the link here to access the deployed app showing the data and the resultant 
 - Launch the jupyter lab or notebook, run the `.ipynb file` and run the cells.
 - Use the streamlit `streamlit run BMI_DBP_main_app.py` to launch the multipage web app.
 
+#### Output
 
+This is a multipage web app with each page showing data and visualisation for one measure of interest.
+The landing page has shows the main page content and on the side bar there is an option to select different headings.
+
+The first selection shows the BMI_DBP pre-post intervention measures and the user has the choice to scan through the data and subsequently choose the visualisation.
+![BMI_DBP_prepost](images/BMI_DBP_prepost.png)
+
+Within the 
    
 
 
