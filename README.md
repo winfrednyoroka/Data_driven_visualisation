@@ -52,17 +52,21 @@ Use the link here to access the deployed app showing the data and the resultant 
 - Launch the jupyter lab or notebook, run the `.ipynb file` and run the cells.
 - Use the streamlit `streamlit run BMI_DBP_main_app.py` to launch the multipage web app.
 
-#### Output
+#### Data-driven visualisation output
 
-This is a multipage web app with each page showing data and visualisation for one measure of interest.
-The landing page has shows the main page content and on the side bar there is an option to select different headings.
+This is a multipage web app with each page showing data and visualisation for the measure of interest.
+The landing page shows the main page content and on the side bar there is an option to choose what to display.
 
-The first selection shows the BMI_DBP pre-post intervention measures and the user has the choice to scan through the data and subsequently choose the visualisation.
+The first selection shows the BMI_DBP pre-post intervention measures and the user has the choice to scan through the data or view visualisation by selecting data or BMI_DBP visualisation.
+
+##### Data
 ![BMI_DBP_prepostdata](images/BMI_DBP_prepost_data.png)
+
+##### BMI_DBP visualisation
 ![BMI_DBP_prepost](images/BMI_DBP_prepost.png)
 
 
-Subsequent visualisations are on sensitivity analysis split over two pages with the first page slection on side bar being euclidean distance at baseline comparing the treated and control arm. The main page you can choose to view the data and the actual visualisation. The visualisation is shown here.
+Subsequent visualisations are on sensitivity analysis split over two pages with the first page on selection on side bar being euclidean distance at baseline comparing the treated vs control arm. On selection the user chooses to view the data or the visualisation. The visualisation is shown here.
 ![BMI_DBP_eucdist](images/BMI_DBP_eucdist.png)
 
 The next selection is of the scenario range (we looked at three scenarios trying to estimate the effect of change in BMI on DBP). We further calculated the range, i.e the maximum less the minimum of the Wald ratios as shown in the figure below.
@@ -71,7 +75,7 @@ The next selection is of the scenario range (we looked at three scenarios trying
    
 
 
-**Authors**
+## **Authors**
 - Winfred N Gatua
 - Maria Sobczyk
 - Yi Liu
