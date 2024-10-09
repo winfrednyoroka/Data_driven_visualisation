@@ -58,9 +58,16 @@ This is a multipage web app with each page showing data and visualisation for on
 The landing page has shows the main page content and on the side bar there is an option to select different headings.
 
 The first selection shows the BMI_DBP pre-post intervention measures and the user has the choice to scan through the data and subsequently choose the visualisation.
+![BMI_DBP_prepostdata](images/BMI_DBP_prepost_data.png)
 ![BMI_DBP_prepost](images/BMI_DBP_prepost.png)
 
-Within the 
+
+Subsequent visualisations are on sensitivity analysis split over two pages with the first page slection on side bar being euclidean distance at baseline comparing the treated and control arm. The main page you can choose to view the data and the actual visualisation. The visualisation is shown here.
+![BMI_DBP_eucdist](images/BMI_DBP_eucdist.png)
+
+The next selection is of the scenario range (we looked at three scenarios trying to estimate the effect of change in BMI on DBP). We further calculated the range, i.e the maximum less the minimum of the Wald ratios as shown in the figure below.
+![BMI_DBP_range](images/BMI_DBP_range.png)
+
    
 
 
