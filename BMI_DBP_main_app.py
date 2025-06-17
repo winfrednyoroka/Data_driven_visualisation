@@ -209,7 +209,7 @@ with tab3:
 	).configure_legend(
     titleFontSize=18,
     labelFontSize=18,
-	symbolSize = 300).configure_headerFacet(labelFontSize=20,labelFontWeight='bold', title= None)
+	symbolSize = 300).configure_headerFacet(labelFontSize=20,labelFontWeight='bold', title= '')
 	,use_container_width=True)
     st.text('''The plot above shows BMI vs DBP for both treatment arms pre-post treatment.    
             The circles represent the baseline, and the diamonds show the twelve months measure.    
