@@ -117,7 +117,7 @@ with tab2:
     # labelFontSize=18,
 	# symbolSize = 300).configure_headerFacet(labelFontSize=20,labelFontWeight='bold')
 	# ,use_container_width=True)
-     BMI_DBP_plot = main_plot
+    BMI_DBP_plot = main_plot
 
     st.altair_chart(BMI_DBP_plot.configure_axis(
         grid=False,
