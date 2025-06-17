@@ -104,19 +104,35 @@ with tab2:
     #main_plot
 
     # Rename the plot all plots
-    BMI_DBP_plot = main_plot
+    # BMI_DBP_plot = main_plot
+
+    # st.altair_chart(BMI_DBP_plot.configure_axis(
+	# 	grid=False,
+    # labelFontSize=20,
+    # titleFontSize=20
+	# ).configure_title(
+    # fontSize=20
+	# ).configure_legend(
+    # titleFontSize=18,
+    # labelFontSize=18,
+	# symbolSize = 300).configure_headerFacet(labelFontSize=20,labelFontWeight='bold')
+	# ,use_container_width=True)
+     BMI_DBP_plot = main_plot
 
     st.altair_chart(BMI_DBP_plot.configure_axis(
-		grid=False,
-    labelFontSize=20,
-    titleFontSize=20
-	).configure_title(
-    fontSize=20
-	).configure_legend(
-    titleFontSize=18,
-    labelFontSize=18,
-	symbolSize = 300).configure_headerFacet(labelFontSize=20,labelFontWeight='bold')
-	,use_container_width=True)
+        grid=False,
+        labelFontSize=20,
+        titleFontSize=20
+    ).configure_title(
+        fontSize=20
+    ).configure_legend(
+        titleFontSize=18,
+        labelFontSize=18
+    ).configure_headerFacet(
+        labelFontSize=20,
+        labelFontWeight='bold'
+    ),
+    use_container_width=True)
     st.text('''The plot above shows BMI vs DBP for both treatment arms pre-post treatment.    
             The circles represent the baseline, and the diamonds show the twelve months measure.    
             The red and blue represent the intervention and control arm respectively.''')
