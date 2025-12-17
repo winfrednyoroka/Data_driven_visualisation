@@ -220,12 +220,11 @@ with tab3:
     titleFontSize=20
 	).configure_title(
     fontSize=20
-	).configure_headerFacet(labelFontSize=20,labelFontWeight='bold')
-    #.configure_legend(
-    #titleFontSize=18,
-    #labelFontSize=18,
-	#symbolSize = 300).configure_headerFacet(labelFontSize=20,labelFontWeight='bold')
-    st.altair_chart(plot2,use_container_width=False)
+	).configure_legend(
+    titleFontSize=18,
+    labelFontSize=18,
+	symbolSize = 300).configure_headerFacet(labelFontSize=20,labelFontWeight='bold')
+    st.altair_chart(BMI_DBP_plot_CI,width=False)
     st.text('''The plot above shows BMI vs DBP for both treatment arms pre-post treatment with confidence intervals.    
             The circles represent the baseline, and the diamonds show the twelve months measure.    
             The red and blue represent the intervention and control arm respectively.''')
