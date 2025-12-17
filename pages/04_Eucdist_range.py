@@ -9,8 +9,8 @@ st.title('Merged Eucdist and Scenario Range')
 # Read in both datasets
 
 # Range dataset
-range_df = pd.read_csv('/Users/qb21134/OneDrive - University of Bristol/Winfred_PhDApps/Data_driven_visualisation/Data/BMI_DBP_scenariorange.csv')
-result_df = pd.read_csv('/Users/qb21134/OneDrive - University of Bristol/Winfred_PhDApps/Data_driven_visualisation/Data/DBP_baseline_normalizedeucdist.csv')
+range_df = pd.read_csv('Data/BMI_DBP_scenariorange.csv')
+result_df = pd.read_csv('Data/DBP_baseline_normalizedeucdist.csv')
 
 # Combine the two datasets for visualisation on column 'Author_pmid'
 st.dataframe(range_df)
@@ -18,6 +18,21 @@ st.dataframe(result_df)
 
 df = pd.merge(range_df,result_df, on ='Author_pmid')
 st.dataframe(df)
+# Manipulate the data before plotting to rename some columns
+df.loc[df['Author_pmid']=='Ospanov_33963974_a','lname']=df['lname']+'_a'
+df.loc[df['Author_pmid']=='Ospanov_33963974_b','lname']=df['lname']+'_b'
+df.loc[df['Author_pmid']=='Tur_23163735_a','lname']=df['lname']+'_a'
+df.loc[df['Author_pmid']=='Tur_23163735_b','lname']=df['lname']+'_b'
+st.dataframe(df)
+# Download the data for further analysis
+rounded_df =df.round(4)
+csv = rounded_df.to_csv(index=False).encode('utf-8')
+st.download_button(
+    label="📥 Download data as CSV",
+    data=csv,
+    file_name='BMI_DBP_range_eucdist.csv',
+    mime='text/csv',
+)
 
 # Visualise using a scatter plot
 
@@ -47,7 +62,22 @@ st.altair_chart(p1.configure_axis(
 symbolSize = 100).configure_headerFacet(labelFontSize=20,labelFontWeight='bold', title= None)
 ,use_container_width=True)
 
-
+custom_colors = [
+    '#1f77b4',  # blue
+    '#ff7f0e',  # orange
+    '#2ca02c',  # green
+    '#d62728',  # red
+    '#9467bd',  # purple
+    '#8c564b',  # brown
+    '#e377c2',  # pink
+    '#7f7f7f',  # gray
+    '#bcbd22',  # olive
+    '#17becf',  # cyan
+    "#00060e",  # black
+    "#ff9878",  # light orange
+    '#98df8a',  # light green
+    '#ff9896'   # light red
+]
 
 # Base chart definition
 P = alt.Chart(df).encode(
@@ -57,24 +87,25 @@ P = alt.Chart(df).encode(
     alt.Y('DBP_scenariorange',
           title='Scenario Range',
           scale=alt.Scale(zero=False, domain=[0, 35])),
-    color=alt.Color('Author_pmid:N').legend(None),
+    color=alt.Color('Author_pmid:N',scale=alt.Scale(range=custom_colors)).legend(None),
     tooltip=list(df.columns)
 )
-
+#color=alt.Color('Scenario',#scale=alt.Scale(scheme='tableau10'))
+# alt.Scale(scheme='viridis')
 # Points layer
 p1 = P.mark_point(filled=True, opacity=0.9, size=100)
-p2= alt.Chart(df).mark_rule(strokeDash=[10, 10],color='gray',size=3).encode(y=alt.datum(0))
-p3 = alt.Chart(df).mark_rule(strokeDash=[10, 10],color='gray',size=3).encode(x=alt.datum(0))
+p2= alt.Chart(df).mark_rule(color='gray',size=3).encode(y=alt.datum(0))
+p3 = alt.Chart(df).mark_rule(color='gray',size=3).encode(x=alt.datum(0))
 
 # Text labels layer — here I'm labeling with 'Author_pmid' but you can pick any other column
 labels = P.mark_text(
     align='left',
     dx=5,  # horizontal offset
     dy=-5,  # vertical offset
-    fontSize=14,
-    angle=300
+    fontSize=10,
+    angle=290
 ).encode(
-    text='Author_pmid:N'
+    text='lname:N'
 )
 
 # Combine points and labels
