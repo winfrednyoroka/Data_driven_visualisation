@@ -130,7 +130,7 @@ with tab2:
     )
 
     # Display chart
-    st.altair_chart(BMI_DBP_plot, use_container_width=True)
+    st.altair_chart(BMI_DBP_plot, width='stretch')
     st.text('''The plot above shows BMI vs DBP for both treatment arms pre-post treatment.    
             The circles represent the baseline, and the diamonds show the twelve months measure.    
             The red and blue represent the intervention and control arm respectively.''')
