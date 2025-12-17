@@ -2,7 +2,7 @@
 import streamlit as st
 import pandas as pd 
 import numpy as np 
-import scipy
+#import scipy
 import altair as alt 
 
 st.title('Merged Eucdist and Scenario Range')
