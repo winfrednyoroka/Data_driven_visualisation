@@ -208,13 +208,13 @@ with tab3:
     ticks_x = tick_x_lower + tick_x_upper
 
     # Combine all plots
-    main_plot = (p1+p2+p3+p4+error_x+ticks_x+error_y+ticks_y).facet('Author_pmid',columns=4,align='all')
+    plot2 = (p1+p2+p3+p4+error_x+ticks_x+error_y+ticks_y).facet('Author_pmid',columns=4,align='all')
     #main_plot
 
     # Rename the plot all plots
     #BMI_DBP_plot = main_plot
 
-    st.altair_chart(main_plot.configure_axis(
+    st.altair_chart(plot2.configure_axis(
 		grid=False,
     labelFontSize=20,
     titleFontSize=20
