@@ -16,7 +16,7 @@ st.sidebar.markdown("**Euclidean distance data and visualisation**")
 
 tab1,tab2=st.tabs(['Data','Euclidean distance visualisation @baseline'])
 # Read in the data (Euclidena distance at baseline)
-result_df = pd.read_csv('/Data/DBP_baseline_normalizedeucdist.csv')
+result_df = pd.read_csv('Data/DBP_baseline_normalizedeucdist.csv')
 #result_df =pd.read_csv("https://github.com/winfrednyoroka/Data_driven_visualisation/blob/main/Data/DBP_baseline_normalizedeucdist.csv")
 # Display the dataframe
 
