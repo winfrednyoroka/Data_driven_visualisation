@@ -127,5 +127,5 @@ st.altair_chart(
         labelFontWeight='bold',
         title=None
     ),
-    use_container_width=True
+    width='stretch'
 )
