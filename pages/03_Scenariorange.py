@@ -15,7 +15,7 @@ st.sidebar.markdown("**Scenario range  data and visualisation**")
 
 tab1,tab2=st.tabs(['Data','Scenario range visualisation'])
 # Read in the data (Scenario range)
-range_df = pd.read_csv('/Users/qb21134/OneDrive - University of Bristol/Winfred_PhDApps/Data_driven_visualisation/Data/BMI_DBP_scenariorange.csv')
+range_df = pd.read_csv('Data/BMI_DBP_scenariorange.csv')
 
 
 # Plot the scenario rnage
