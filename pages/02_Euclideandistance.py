@@ -3,7 +3,8 @@ import streamlit as st
 import pandas as pd 
 import numpy as np 
 #import scipy
-import altair as alt 
+import altair as alt
+import os
 
 st.markdown(":blue[Euclidean distance visualisation at baseline]")
 st.write('''We calculated the Euclidean distance at baseline of body mass index (BMI) and diastolic blood presure (DBP)
