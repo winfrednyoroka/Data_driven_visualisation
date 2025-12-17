@@ -72,6 +72,9 @@ Subsequent visualisations are on sensitivity analysis split over two pages with 
 The next selection is of the scenario range (we looked at three scenarios trying to estimate the effect of change in BMI on DBP). We further calculated the range, i.e the maximum less the minimum of the Wald ratios as shown in the figure below.
 ![BMI_DBP_range](images/BMI_DBP_range.png)
 
+We visualised Euclidean distance vs Scenarirange on the same plot for ease of comparison.
+![BMI_DBP_Eucdist_range](Figures/EuclideandistvsScenariorange.png)
+
    
 
 
