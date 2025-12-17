@@ -225,7 +225,7 @@ with tab3:
     # titleFontSize=18,
     # labelFontSize=18,
 	# symbolSize = 300).configure_headerFacet(labelFontSize=20,labelFontWeight='bold')
-    st.altair_chart(BMI_DBP_plot_CI,width=False)
+    st.altair_chart(BMI_DBP_plot_CI,width='stretch')
     st.text('''The plot above shows BMI vs DBP for both treatment arms pre-post treatment with confidence intervals.    
             The circles represent the baseline, and the diamonds show the twelve months measure.    
             The red and blue represent the intervention and control arm respectively.''')
