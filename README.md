@@ -65,16 +65,17 @@ The first selection shows the BMI_DBP pre-post intervention measures and the use
 ##### BMI_DBP visualisation
 ![BMI_DBP_prepost](images/BMI_DBP_prepost.png)
 
-
+##### Euclidean distance at baseline
 Subsequent visualisations are on sensitivity analysis split over two pages with the first page on selection on side bar being euclidean distance at baseline comparing the treated vs control arm. On selection the user chooses to view the data or the visualisation. The visualisation is shown here.
 ![BMI_DBP_eucdist](images/BMI_DBP_eucdist.png)
-
+##### ScenarioRange (max-min of Equation 1 ...3)
 The next selection is of the scenario range (we looked at three scenarios trying to estimate the effect of change in BMI on DBP). We further calculated the range, i.e the maximum less the minimum of the Wald ratios as shown in the figure below.
 ![BMI_DBP_range](images/BMI_DBP_range.png)
-
+##### Euc_dist vs ScenarioRange
 We visualised Euclidean distance vs Scenarirange on the same plot for ease of comparison.
 ![BMI_DBP_Eucdist_range](Figures/EuclideandistvsScenariorange.png)
 
+##### Hypothesis testing 
 We performed independent t-test to evaluate whether the observed Euclidean distances between control and treated at baseline were true differences or arising from chance.
 **p_bmi** and **p_dbp** for BMI and DBP respectively.
 |Author_pmid|Intervention|Control|n_treat|n_ctrl|mean_bmi_treat|sd_bmi_treat|mean_bmi_ctrl|sd_bmi_ctrl|mean_dbp_treat|sd_dbp_treat|mean_dbp_ctrl|sd_dbp_ctrl|Euc_dist|p_bmi|p_dbp|
