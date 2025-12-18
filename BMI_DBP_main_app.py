@@ -1,9 +1,4 @@
 # Importing necessary libraries
-import sys, scipy, streamlit as st
-
-st.write(sys.version)
-st.write("SciPy:", scipy.__version__)
-
 import streamlit as st
 import pandas as pd
 import altair as alt
