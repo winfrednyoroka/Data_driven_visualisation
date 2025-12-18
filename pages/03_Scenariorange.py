@@ -45,7 +45,7 @@ characteristics.
 It has the minimum and maximum Wald ratio.""")
 
 with tab2:
-    st.altair_chart(DBPrangeplot, width='stretch',theme='streamlit')
+    st.altair_chart(DBPrangeplot, use_container_width=True,theme='streamlit')
     st.text("""The plot above shows the range i.e. maximum Wald ratio less 
 minimum Wald ratio for each.
 A range of zero, shows that the baseline characteristics were the same 

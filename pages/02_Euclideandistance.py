@@ -48,7 +48,7 @@ distances. It has the average BMI and DBP for both treatment arms.
 
 with tab2:
 	# Display the visualisation
-	st.altair_chart(T1C1_Eucdist_DBP_plot,width='stretch',theme='streamlit') #use_container_width=True
+	st.altair_chart(T1C1_Eucdist_DBP_plot,use_container_width=True,theme='streamlit') #use_container_width=True, width='stretch'
 
 	st.text('''The figure above shows Euclidean distance between the treatment arms at baseline.
 Euclidean distance equal to zero shows BMI and DBP at baseline was the same in both
